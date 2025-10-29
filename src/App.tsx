@@ -42,7 +42,7 @@ const App = () => {
     <div className="font-['Noto_Sans'] min-h-screen w-full bg-[url('/assets/leaves.jpg')] bg-cover bg-bottom flex items-center justify-start">
       <div className="w-full md:w-1/2 min-h-screen bg-gradient-to-b from-gray-900/90 to-gray-900/95 p-10 flex">
         <div className="w-full text-center my-auto">
-          <h1 className="font-['Comforter_Brush'] font-bold text-5xl text-amber-500 mb-10 md:text-right">
+          <h1 className="font-['Comforter_Brush'] font-bold text-6xl text-amber-500 mb-10 md:text-right">
             troo.earth
           </h1>
 
@@ -70,15 +70,23 @@ const App = () => {
           </div>
 
           {/* Description */}
-          <p className="text-base mb-10 text-gray-200 md:text-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            reprehenderit delectus quasi eligendi maiores consectetur repellat
-            necessitatibus libero deleniti quaerat debitis, odit earum modi.
-            Magni porro iste dolores.
+          <p className="text-base mb-10 text-gray-200 leading-relaxed text-left">
+            <span className="font-semibold text-amber-400">troo.earth</span> is a digital
+            marketplace enabling transparent, efficient, and secure trading of carbon
+            credits between verified buyers and sellers.
+            <br />
+            <br />
+            We empower individuals, organizations, and enterprises to participate
+            meaningfully in the global transition toward sustainability by simplifying
+            access to high-quality carbon assets.
+            <br />
+            <br />
+            Our mission is to build trust, drive accountability, and accelerate measurable
+            climate action.
           </p>
 
           {/* Social Media */}
-          <div className="w-full text-left flex">
+          <div className="w-full text-left flex hidden">
             <ul className="w-full flex justify-center md:justify-end gap-10 mx-auto text-gray-500">
               {[
                 { icon: "facebook-f", url: "#" },
